@@ -1,0 +1,6 @@
+postcode_lookup:
+  version: VERSION
+  js:
+    js/postcode_lookup.js: {}
+  dependencies:
+    - core/jquery.ui.autocomplete

@@ -1,0 +1,10 @@
+name: 'CiviCRM Postcode Lookup'
+type: module
+description: 'Provides a custom Postcode Lookup element that populates CiviCRM Webform address fields based on postcode search.'
+package: 'CiviCRM'
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - 'webform:webform'
+  - webform_civicrm
+  - civicrm
+version: '1.0'
