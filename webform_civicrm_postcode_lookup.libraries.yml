@@ -2,5 +2,7 @@ postcode_lookup:
   version: VERSION
   js:
     js/postcode_lookup.js: {}
+  css:
+    css/components/autocomplete-loading.module.css: {}
   dependencies:
     - core/jquery.ui.autocomplete

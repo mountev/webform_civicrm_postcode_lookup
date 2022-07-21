@@ -4,9 +4,10 @@
     var pcFieldId = data.fieldId;
     var sourceUrl = data.baseUrl + "/civicrm/" + lookupProvider + "/ajax/search?json=1";
     if ($('#'+pcFieldId).length) { // Check postcode element exists on page first
+      $('#' + pcFieldId).addClass('form-autocomplete');
       $('#' + pcFieldId).autocomplete({
         source: sourceUrl,
-        minLength: 3,
+        minLength: 5,
         select: function (event, ui) {
           var id = ui.item.id;
           var sourceUrl = data.baseUrl + '/civicrm/' + lookupProvider + '/ajax/get?json=1';
@@ -68,11 +69,7 @@
     $('[id *="' + AddstreetAddressElement + '"]').val(address.supplemental_address_1);
     $('[id *="' + AddstreetAddressElement1 + '"]').val(address.supplemental_address_2);
     $('[id *="' + AddstreetAddressElement2 + '"]').val(address.supplemental_address_3);
-    if (address.city !== undefined) {
-      $('[id *="' + cityElement + '"]').val(address.city);
-    } else {
-      $('[id *="' + cityElement + '"]').val(address.town);
-    }
+    $('[id *="' + cityElement + '"]').val(address.city);
     $('[id *="' + postalCodeElement + '"]').val(address.postcode);
     $('[id *="' + countyElement + '"]').val(address.state_province_abbreviation);
   }
