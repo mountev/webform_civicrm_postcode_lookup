@@ -1,7 +1,10 @@
 # D9 CiviCRM Postcode Lookup for webforms
 
 ## Overview
-Integrates civicrm postcode lookup extension [ukpostcodes](https://lab.civicrm.org/extensions/ukpostcodes) with [webform_civicrm](https://www.drupal.org/project/webform_civicrm) for Drupal 9.
+Integrates civicrm postcode lookup extension [ukpostcodes](https://lab.civicrm.org/extensions/ukpostcodes) with [webform_civicrm](https://www.drupal.org/project/webform_civicrm) for Drupal 9 / 10.
+
+## Requirement
+Requires jQuery UI Autocomplete module. For installation see https://www.drupal.org/project/jquery_ui_autocomplete.
 
 ## Steps
 This extension provides a element type called "CiviCRM Postcode Lookup". To use this you will need to follow the steps below:

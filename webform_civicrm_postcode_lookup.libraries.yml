@@ -5,4 +5,4 @@ postcode_lookup:
   css:
     css/components/autocomplete-loading.module.css: {}
   dependencies:
-    - core/jquery.ui.autocomplete
+    - jquery_ui_autocomplete/autocomplete
